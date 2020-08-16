@@ -1,3 +1,5 @@
+# Contest Link - https://www.hackerrank.com/contests/all-india-contest-by-mission-helix-15-august/challenges
+
 def member_count(n):
     i = 1
     while(((i*(i-1))//2) <= n):
