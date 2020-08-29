@@ -1,4 +1,11 @@
-def twoSum(nums, target):
+def twoSum(arr, k):
+        for i in range(len(arr)):
+                diff = k - arr[i]
+                if(binary_search(arr, low, high, k) == True):
+                        return True
+                return False
+
+'''def twoSum(nums, target):
         """
         :type nums: List[int]
         :type target: int
@@ -12,7 +19,7 @@ def twoSum(nums, target):
         for i in range(len(nums)):
             diff = target - nums[i]
             if diff in nums:
-                return [i, dct[diff]]
+                return [i, dct[diff]]'''
 
 nums = [3,2,4]
 target = 6
