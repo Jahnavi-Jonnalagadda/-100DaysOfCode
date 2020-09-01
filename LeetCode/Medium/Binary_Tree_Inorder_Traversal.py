@@ -10,9 +10,9 @@ def inorderTraversal(root):
                 st.append(curr)
                 curr = curr.left
             if(len(st)>0):
-                curr = st.pop()
-                res.append(curr.val)
-                curr = curr.right
+                top = st.pop()
+                res.append(top.val)
+                curr = top.right
             else:
                 break
         return res
