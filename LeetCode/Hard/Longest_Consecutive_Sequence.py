@@ -1,7 +1,6 @@
 # Approach 1: TC - O(NlogN) ; SC - O(1)
 def longestConsecutive(arr):
     arr.sort()
-    mx = 0
     res = 0
     count = 0
     for i in range(1, len(arr)):
