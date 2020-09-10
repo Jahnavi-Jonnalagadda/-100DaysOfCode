@@ -11,7 +11,7 @@ def peak_valley(arr):
     for i in range(1, len(arr)-1, 2):
         mx = max(arr[i], arr[i-1], arr[i+1])
         if(mx == arr[i]):
-            mx_idx = i
+            continue
         elif(mx == arr[i-1]):
             mx_idx = i-1
         else:
