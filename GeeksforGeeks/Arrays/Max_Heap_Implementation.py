@@ -14,8 +14,16 @@ def maxHeapify(arr, i):
 def buildMaxHeap(arr):
     for i in range((len(arr)//2)-1, -1, -1):
         maxHeapify(arr, i)
-    return arr
+    print("Max Heap: ", arr)
+
+def extractMax(arr):
+    if(len(arr) == 0):
+        return -1
+    mx = arr[0]
+    arr[0] = arr[len(arr)-1]
+    arr.pop()
+    return mx
 
 arr = list(map(int,input().split()))
-print(buildMaxHeap(arr))
-
+buildMaxHeap(arr)
+print("Max element: ", extractMax(arr))
