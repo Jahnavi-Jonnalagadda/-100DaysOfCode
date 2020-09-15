@@ -9,12 +9,11 @@ def oneAway(s1, s2):
 
 def oneReplace(s1, s2):
     flag = False
-    i1, i2 = 0, 0
     for i in range(len(s1)):
-        if(s1[i1] == s2[i2]):
+        if(s1[i] == s2[i]):
             flag = True
         else:
-            if(i1 == i2):
+            if(flag == False):
                 flag = True
             else:
                 return False
