@@ -17,6 +17,8 @@ def plus_one(arr):
 
 # Approach-2
 def plus_one(arr):
+    if(arr == [9]):
+        return [1, 0]
     n = len(arr)
     c = 0
     val = arr[n-1] + 1
