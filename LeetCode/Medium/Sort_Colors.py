@@ -1,5 +1,5 @@
 # Approach 1:
-def sortColors(self, arr):
+def sortColors(nums):
         low = 0
         mid = 0
         high = len(nums)-1
