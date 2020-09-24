@@ -34,3 +34,16 @@ def check_symmetry(leftNode, rightNode):
     if(leftNode.val != rightNode.val):
         return False
     return check_symmetry(leftNode.left, rightNode.right) and check_symmetry(leftNode.right, rightNode.left)
+
+#Recursive Version
+def isSymmetric(self, root):
+        if(root == None):
+            return True
+        return checkSymmetric(root.left, root.right)
+
+def checkSymmetric(leftSubtree, rightSubtree):
+    if(leftSubtree == None and rightSubtree == None):
+        return True
+    elif(leftSubtree != None and rightSubtree != None):
+        return leftSubtree.val == rightSubtree.val and checkSymmetric(leftSubtree.left, rightSubtree.right) and checkSymmetric(leftSubtree.right, rightSubtree.left)
+    return False
